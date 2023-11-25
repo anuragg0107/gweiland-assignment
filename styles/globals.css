@@ -1,0 +1,396 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+li{
+  font-size: inherit;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bars{
+  display: none;
+}
+
+.mobile-logo{
+  display: none;
+}
+.announcement {
+  position: fixed;
+  background: #E1C200;
+  color: #212122;
+  text-align: center;
+  font-weight: 700;
+  padding: 14px 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+/* Navbar Css */
+
+.navbar {
+  position: fixed;
+  top: 7.6%;
+  left: 0;
+  width: 100%;
+  min-height: 86px;
+  background: #212122;
+  color: #FFFFFF;
+  padding: 0 35px;
+  z-index: 1000; 
+}
+.navbar-row {
+  padding: 0 15px;
+}
+
+/* Left side navigation styles */
+.navbar-left {
+  display: flex;
+  padding-top: 20px;
+}
+
+.navbar-left ul {
+  display: flex;
+  text-align: left;
+  font-size: 0.9375rem;
+  flex-wrap: wrap; 
+}
+
+.navbar-left ul li {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  display: inline-flex;
+  padding: 0 20px;
+  margin: 10px 0;
+  font-weight: 700;
+  transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+}
+
+.navbar-left ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: width 0.25s cubic-bezier(0.104, 0.204, 0.492, 1) 0.1s,
+    background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+}
+
+.navbar-left ul li:hover {
+  color: #e1c200;
+}
+
+.navbar-left ul li:hover::after {
+  width: 100%;
+  background-color: #e1c200;
+}
+
+.logo {
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 146px;
+  cursor: pointer;
+  display: flex;
+}
+
+.logo img{
+  object-position: center;
+  height: 52px;
+  width: 110px;
+}
+
+/* Right side navigation styles */
+.navbar-right {
+  margin-left: auto;
+  height: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+.navbar-right p {
+  color: #FFFFFF;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.navbar-right ul {
+  display: flex;
+}
+
+.navbar-right ul li {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  display: inline-flex;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-weight: 700;
+  transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+}
+
+.navbar-right ul li:hover {
+  color: #e1c200;
+}
+
+.mySwiper1{
+  margin-top: 130px;
+  height: 100%;
+  transition-delay: 1s;
+}
+
+.mySwiper1 .image1{
+  width: 100%;
+  height: 650px;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.nav-links{
+  display: none;
+}
+
+.mobile-cart{
+  display: none;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+}
+
+.slider{
+  margin: auto;
+ overflow: hidden;
+ position: relative;
+}
+
+.slider .slider-track{
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 12);
+}
+
+.slider .slide1{
+  width: 400px;
+  height: 150px;
+  background: pink;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.slider .slide2{
+  width: 400px;
+  height: 150px;
+  background: rgb(35, 107, 211);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.slider .slide3{
+  width: 400px;
+  height: 150px;
+  background: #000000;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.slider .slide4{
+  width: 400px;
+  height: 150px;
+  background: #000000;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.slider .slide5{
+  width: 400px;
+  height: 150px;
+  background: rgb(9, 31, 44);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.slider .slide6{
+  width: 400px;
+  height: 150px;
+  background: #000000;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.slider .slide1 img ,.slide2 img,.slide3 img, .slide4 img,.slide5 img,.slide6 img{
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 16%;
+  height: 100px;
+}
+.slider .slide1 .brand-name, .slide2 .brand-name, .slide3 .brand-name, .slide4 .brand-name, .slide5 .brand-name, .slide6 .brand-name{
+  text-align: right;
+  margin: 1.5rem 0.5rem 0 6rem;
+  color: #FFFFFF;
+  padding-top: 5px;
+  font-style: italic;
+  font-size: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+}
+
+.slider .slide1 .cta, .slide2 .cta, .slide3 .cta, .slide4 .cta, .slide5 .cta, .slide6 .cta{
+  font-size: 17.6px;
+  float: right;
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    padding-top: 40px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+@-webkit-keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
+}
+/* Mobile view styles */
+@media  (max-width: 768px) {
+ 
+ .menu-toggle{
+  display: block;
+ }
+
+ .navbar-left{
+  display: none;
+ }
+ 
+ .navbar-right{
+  display: none;
+ }
+
+ .logo {
+ display: none;
+}
+
+.mobile-logo{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.navbar{
+  position: fixed;
+  top: 5%;
+  min-height: 50px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #212122;
+  width: 103%;
+  height: 640px;
+  top: 59px;
+  left: -6%;
+  padding-left: 1em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-links li{
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.mobile-cart{
+  display: block;
+  margin-left: auto;
+  height: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+i{
+  margin-top: 20px;
+}
+
+.mySwiper1{
+ margin-top: 104px;
+}
+
+.mySwiper1 .image1{
+  height: 320px;
+}
+
+.mobile-silder1{
+  width: 200px;
+  height: 100px;
+  background: #A252D0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  position: relative;
+}
+
+.mobile-silder1 img{
+  height: 50px;
+  width: 50px;
+}
+
+.bars{
+  display: block;
+}
+
+.mobile-logo{
+  display: block;
+}
+
+.wrapper{
+  height: 29vh;
+}
+
+}
