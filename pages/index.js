@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -33,7 +33,7 @@ import "font-awesome/css/font-awesome.min.css";
 import Head from "next/head";
 
 const index = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = React.useState(false);
 
   const toggleMenu = () => {
     setIsActive(!isActive);
